@@ -1,4 +1,18 @@
 <h2>Editing "<%= @post.title %>"</h2>
+<% if @post.errors.any? %>
+  <div id="error_explanation">
+    <h2>
+      <%= pluralize(@post.errors.count, "error") %>
+      prohibited this post from being saved:
+    </h2>
+
+    <ul>
+    <% @post.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
 <%= form_tag post_path(@post), method: "patch" do %>
   <div class="field">
     <%= label_tag "title", "Title" %>
@@ -20,4 +34,3 @@
   </div>
   <%= submit_tag "Update" %>
 <% end %>
-
