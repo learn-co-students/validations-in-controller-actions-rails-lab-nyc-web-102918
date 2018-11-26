@@ -27,14 +27,14 @@ This is a barebones app with two models, `Author` and `Post`. Right now, you can
 
 To complete this lab, you will need to:
 
-1. Add validations to `Author` such that...
+<!-- 1. Add validations to `Author` such that...
   1. The name cannot be blank
-  1. The e-mail is unique
-1. Add validations to `Post` such that...
-  1. The title cannot be blank
-  1. The category is either `"Fiction"` or `"Non-Fiction"`
-  1. The content is at least 100 characters long.
-1. Change `AuthorsController#create` to re-render the form if the new author is invalid.
+  1. The e-mail is unique -->
+<!-- 1. Add validations to `Post` such that... -->
+  <!-- 1. The title cannot be blank
+  1. The category is either `"Fiction"` or `"Non-Fiction"` -->
+  <!-- 1. The content is at least 100 characters long. -->
+<!-- 1. Change `AuthorsController#create` to re-render the form if the new author is invalid. -->
 1. Change `PostsController#update` to re-render the form if the updated post is invalid.
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/validations-in-controller-actions-rails-lab' title='Validations In Controller Actions Lab'>Validations In Controller Actions Lab</a> on Learn.co and start learning to code for free.</p>
